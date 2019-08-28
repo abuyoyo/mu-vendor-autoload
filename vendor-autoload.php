@@ -2,11 +2,15 @@
 /**
  * Plugin Name: Vendor Autoload
  * Description: Include Composer autoload.php (Wordpress mu-plugin)
- * Version: 0.2
+ * Version: 0.3
  * Author: abuyoyo
  * Author URI: https://github.com/abuyoyo/
  * Last Update: 2019_08_25
  */
+
+if ( isset( $_REQUEST['reset_vendor_dir'] ) ){
+	delete_option( 'vendor_dir' );
+}
 
 if ( ! $vendor_dir = get_option( 'vendor_dir' ) ){
 	$vendor_dir = exec('composer config vendor-dir --absolute');
