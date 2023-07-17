@@ -2,11 +2,11 @@
 /**
  * Plugin Name: Vendor Autoload (MU)
  * Description: Require vendor/autoload
- * Version: 0.6
+ * Version: 0.7
  * Author: abuyoyo
  * Author URI: https://github.com/abuyoyo/
  * Plugin URI: https://github.com/abuyoyo/mu-vendor-autoload
- * Last Update: 2023_07_14
+ * Last Update: 2023_07_18
  */
 if ( ! defined( 'ABSPATH' ) )
 	die( 'No soup for you!' );
